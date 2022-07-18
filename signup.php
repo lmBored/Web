@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Đăng ký </title>
+<title>Register </title>
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -22,12 +22,12 @@
         $query = "INSERT into `users` (username, password, email, trn_date) VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
-            echo "<div class='form'><h3>Bạn đã đăng ký thành công</h3><br/>Click để <a href='login.php'>Đăng nhập</a></div>";
+            echo "<div class='form'><h3>Successfully registered</h3><br/>Click to <a href='login.php'>login</a></div>";
         }
     }else{
 ?>
 <div class="form">
-<h1>Đăng ký</h1>
+<h1>Register</h1>
 <form name="registration" action="" method="post">
 <input type="text" name="username" placeholder="Tên đăng nhập" required />
 <input type="email" name="email" placeholder="Email" required />
