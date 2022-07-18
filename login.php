@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Đăng nhập </title>
+<title>Login </title>
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -24,18 +24,18 @@
 			$_SESSION['username'] = $username;
 			header("Location: index.php");
             }else{
-				echo "<div class='form'><h3>Tên đăng nhập hoặc mật khẩu không đúng!</h3></br><a href='login.php'>Đăng nhập lại</a></div>";
+				echo "<div class='form'><h3>Invalid username or password</h3></br><a href='login.php'>Login again</a></div>";
 				}
     }else{
 ?>
 <div class="form">
-<h1>Đăng nhập</h1>
+<h1>Login</h1>
 <form action="" method="post" name="login">
 <input type="text" name="username" placeholder="Tên đăng nhập" required />
 <input type="password" name="password" placeholder="Mật khẩu" required />
 <input name="submit" type="submit" value="Đăng nhập" />
 </form>
-<p>Bạn chưa có tài khoản? <a href='signup.php'>Đăng ký ngay</a></p><br/>
+<p>Don't have an account? <a href='signup.php'>Register now</a></p><br/>
 
 </div>
 <?php } ?>
