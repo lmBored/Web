@@ -29,10 +29,10 @@
 <div class="form">
 <h1>Register</h1>
 <form name="registration" action="" method="post">
-<input type="text" name="username" placeholder="Tên đăng nhập" required />
+<input type="text" name="username" placeholder="Username" required />
 <input type="email" name="email" placeholder="Email" required />
-<input type="password" name="password" placeholder="Mật khẩu" required />
-<input type="submit" name="submit" value="Đăng ký" />
+<input type="password" name="password" placeholder="Password" required />
+<input type="submit" name="submit" value="Register" />
 </form>
 </div>
 <?php } ?>
