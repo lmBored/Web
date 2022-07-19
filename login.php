@@ -31,9 +31,9 @@
 <div class="form">
 <h1>Login</h1>
 <form action="" method="post" name="login">
-<input type="text" name="username" placeholder="Tên đăng nhập" required />
-<input type="password" name="password" placeholder="Mật khẩu" required />
-<input name="submit" type="submit" value="Đăng nhập" />
+<input type="text" name="username" placeholder="Username" required />
+<input type="password" name="password" placeholder="Password" required />
+<input name="submit" type="submit" value="Login" />
 </form>
 <p>Don't have an account? <a href='signup.php'>Register now</a></p><br/>
 
